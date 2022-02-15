@@ -1,0 +1,203 @@
+let mapleader=" "
+syntax on
+
+"允许使用鼠标 a是启用
+set mouse=
+set novisualbell          "关掉可视化响铃警报
+set noerrorbells          "关掉错误警报
+set visualbell t_vb=      "关掉警报
+
+set tm=500
+set t_Co=256 "显示256色
+
+set tabstop=2
+
+set number
+set cursorline
+set wrap
+set showcmd
+set wildmenu
+
+set hlsearch
+exec "nohlsearch"
+set incsearch
+set ignorecase
+set smartcase
+
+"移动且居中
+noremap n nzz
+noremap N Nzz
+noremap <LEADER><CR> :nohlsearch<CR>
+noremap j jzz
+noremap k kzz
+
+"配置快捷
+map S :w<CR>
+map Q :q<CR>
+map R :source $MYVIMRC<CR>
+
+"快速换行
+map H 7h
+map J 5j
+map K 5k
+map L 7l
+
+"设置分屏
+map sr :set splitright<CR>:vsplit<CR>
+map sl :set nosplitright<CR>:vsplit<CR>
+map su :set nosplitbelow<CR>:split<CR>
+map sd :set splitbelow<CR>:split<CR>
+
+"分屏状态下切换光标所说的位置
+map <LEADER><up> <C-w>k
+map <LEADER><down> <C-w>j
+map <LEADER><left> <C-w>h
+map <LEADER><right> <C-w>l
+
+"设置分屏的尺寸
+map <up> :res +5<CR>
+map <down> :res -5<CR>
+map <left> :vertical resize -5<CR>
+map <right> :vertical resize +5<CR>
+
+":tabe打开新的标签页(可以加文件名)，切换
+map tn :tabe<CR>
+map th :-tabnext<CR>
+map tl :+tabnext<CR>
+
+"配置插件
+"ff 文件树
+nnoremap ff :NERDTreeFocus<CR>
+
+"tt函数列表 大小30
+nmap tt :TagbarToggle<CR>
+let g:tagbar_width = 20
+
+
+""透明
+let g:SnazzyTransparent = 1
+
+""查看历史版本
+nnoremap <F7> :UndotreeToggle<CR>
+
+"gcmt/wildfire.vim
+"通过回车来选择一部分代码，然后修改
+"
+"tpope/vim-surround
+"选中一段字符，S 后可以在左右两边加上符号
+"指令 cs某一符号某一符号 将符号变更为后面的符号
+"例： cs"' 将"hello"的“换成'
+"指令 ds某一符号 将符号删去
+"例 ds" 将"hello"的"删去
+"指令 yss符号 在左右加上符号
+"例 yss(在hello的两边加上() 左括号有空格，右边没有
+"例 ysi("  printf(hello!) 在括号里面加上"
+"例 ysiw[ 将hello world 变为 [ hello ] world
+"ys添加环绕字符
+"yS添加环绕字符并拆分新行
+"yss为整行添加环绕字符
+"ySS为整行添加环绕字符并拆分新行
+"cs修改环绕字符
+"cS修改环绕字符并拆分新行
+"ds删除环绕字符
+
+
+"写markdown的快捷
+"autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
+autocmd Filetype markdown inoremap <LEADER><TAB> <Esc>/<++><CR>:nohlsearch<CR>c4l
+autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
+autocmd Filetype markdown inoremap ,b **** <++><Esc>F*hi
+autocmd Filetype markdown inoremap ,s ~~~~ <++><Esc>F~hi
+autocmd Filetype markdown inoremap ,i ** <++><Esc>F*i
+autocmd Filetype markdown inoremap ,d `` <++><Esc>F`i
+autocmd Filetype markdown inoremap ,c ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
+autocmd Filetype markdown inoremap ,h ====<Space><++><Esc>F=hi
+autocmd Filetype markdown inoremap ,p ![](<++>) <++><Esc>F[a
+autocmd Filetype markdown inoremap ,a [](<++>) <++><Esc>F[a
+autocmd Filetype markdown inoremap ,1 #<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,2 ##<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,3 ###<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,4 ####<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,5 #####<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,6 ######<Space><Enter><++><Esc>kA
+autocmd Filetype markdown inoremap ,l --------<Enter>
+
+"vim表格
+map <LEADER>tm :TableModeToggle<CR>
+
+" Compile function
+map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+  exec "w"
+  if &filetype == 'c'
+    exec "!g++ % -o %<"
+    exec "!time ./%<"
+  elseif &filetype == 'cpp'
+    exec "!g++ % -o %<"
+    exec "!time ./%<"
+  elseif &filetype == 'java'
+    exec "!javac %"
+    exec "!time java %<"
+  elseif &filetype == 'sh'
+    :!time bash %
+  elseif &filetype == 'python'
+    silent! exec "!clear"
+    exec "!time python3 %"
+  elseif &filetype == 'html'
+    exec "!firefox % &"
+  elseif &filetype == 'markdown'
+    exec "MarkdownPreview"
+  elseif &filetype == 'vimwiki'
+    exec "MarkdownPreview"
+  endif
+endfunc
+
+"" Compile function
+"noremap <F5> :call CompileRunGcc()<CR>
+"function! CompileRunGcc()
+"  execute "w"
+"  if &filetype == 'c'
+"    if !isdirectory('build')
+"      execute "!mkdir build"
+"    endif
+"    execute "!gcc % -o build/%<"
+"    execute "!time ./build/%<"
+"  endif
+"endfunction
+
+	
+		
+
+
+"安装插件
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/vim-cursorword'
+Plug 'vim-airline/vim-airline'
+Plug 'connorholyday/vim-snazzy'
+Plug 'BobCody/nerdtree'
+Plug 'preservim/tagbar'
+Plug 'mbbill/undotree'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-surround'
+Plug 'gcmt/wildfire.vim'
+"Plug 'jiangmiao/auto-pairs'
+Plug 'iamcco/mathjax-support-for-mkdp'
+"Plug 'iamcco/markdown-preview.nvim'
+Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
+
+
+
+call plug#end()
+
+
+set tags=/home/tarena/project/tags
+
+
+
+
+
+"美化
+color snazzy
+
