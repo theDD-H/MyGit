@@ -1,0 +1,155 @@
+    1  sudo pacman-mirrors -i -c China -m rank
+    2  sudo pacman -Syyu
+    3  sudo pacman -Syyu
+    4  sudo pacman -Syyu
+    5  sudo pacman -Syyu
+    6  sudo pacman -Syyu
+    7  reboot
+    8  reboot
+    9  sudo vim /etc/pacman.conf
+   10  ls
+   11  sudo pacman -Syyu
+   12  sudo pacman -S alacritty
+   13  vim .i3/config 
+   14  alacritty
+   15  cp 下载/linux/emmaas/i3config  ~/.i3/config
+   16  vim .i3/config 
+   17  sudo pacman -S yay
+   18  yay -S microsoft-edge-dev-bin
+   19  yay -S microsoft-edge-dev-bin
+   20  sudo vim /etc/pacman.conf
+   21  sudo pacman -Syyu
+   22  sudo pacman -Syy
+   23  sudo pacman -S archlinuxcn-keyring
+   24  sudo pacman -Syy
+   25  sudo pacman -S ranger
+   26  sudo pacman -S ttf-font-awesome wqy-bitmapfont wqy-microhei wqy-zenhei nerd-fonts-complete
+   27  cp 下载/linux/emmaas/alacrittyconfig ~/.config/alacritty/alacritty.yml
+   28  mkdir ~/.config/alacritty
+   29  cp 下载/linux/emmaas/alacrittyconfig ~/.config/alacritty/alacritty.yml
+   30  sudo pacman -S picom
+   31  vim .config/picom.conf 
+   32  cd 下载
+   33  cd linux/
+   34  cp git.sh ~/
+   35  cd
+   36  ls
+   37  git clone https://gitee.com/MyEmmaa/emmaas.git
+   38  ~/git.sh 
+   39  ~/git.sh 
+   40  git config --global user.name "emmaa"
+   41  git config --global user.email "2236183831@qq.com"
+   42  ~/git.sh 
+   43  ssh-keygen -t ed25519 -C "2236183831@qq.com"
+   44  ssh-keygen -t ed25519 -C 
+   45  ssh-keygen -t ed25519 -C
+   46  cat ~/.ssh/id_ed25519.pub
+   47  vim ~/.ssh/id_ed25519.pub
+   48  vim ~/.ssh/id_ed25519.pub
+   49  ssh -T git@gitee.com
+   50  ~/git.sh 
+   51  ~/git.sh 
+   52  cd emmaas/
+   53  touch a.txt
+   54  cd
+   55  ~/git.sh 
+   56  cd emmaas/
+   57  git config --global credential.helper store
+   58  ~/git.sh 
+   59  ls
+   60  rm a.txt 
+   61  git rm a.txt 
+   62  ~/git.sh 
+   63  cd
+   64  cd 下载/linux/emmaas/
+   65  ls
+   66  tar -zxvf myvim.tar.gz
+   67  cd myvim
+   68  mkdir ~/.vim
+   69  cp vimrc ~/.vim/
+   70  cd
+   71  vim .vim/vimrc
+   72  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   73  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   74  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   75  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   76  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   77  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   78  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   79  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   80  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   81  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   82  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   83  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   84  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   85  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   86  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   87  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   88  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   89  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   90  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   91  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   92  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   93  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   94  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   95  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   96  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   97  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   98  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   99  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  100  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  101  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  102  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  103  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  104  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  105  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  106  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  107  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  108  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  109  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  110  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  111  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  112  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  113  curl -fLo ~/.vim/autoload/plug.vim --create-dirs   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  114  cd 下载
+  115  cd linux/emmaas/
+  116  cd myvim
+  117  ls
+  118  cp -r ./* ~/.vim/
+  119  cd 
+  120  vim .vim/vimrc 
+  121  vim a.md
+  122  sudo pacman -R palemoon
+  123  ls
+  124  sudo pacman -S wps-office
+  125  yay -S wps-office
+  126  cd 下载
+  127  ls
+  128  tar -zxvf pycharm-community-2022.1.tar.gz
+  129  ls
+  130  sudo mv pycharm-community-2022.1 /opt/
+  131  ls
+  132  cd 
+  133  cd /opt
+  134  ls
+  135  cd pycharm-community-2022.1/
+  136  cd bin
+  137  ls
+  138  ./pycharm.sh 
+  139  cd
+  140  cd 下载
+  141  ls
+  142  rm *id*
+  143  ls
+  144  rm py*
+  145  ls
+  146  sudo pacman -S ttf-roboto noto-fonts ttf-dejavu
+  147  cd
+  148  sudo pacman -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
+  149  sudo pacman -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+  150  sudo pacman -S ttf-wps-fonts
+  151  fistory
+  152  history
+  153  history >> order.txt
+
+更改双显卡驱动 先卸载原来的 后安装primer
